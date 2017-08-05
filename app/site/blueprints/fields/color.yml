@@ -1,0 +1,7 @@
+label: Couleur d'arrière plan
+type: select
+options:
+  white: Blanc
+  black: Noir
+  gray: Gris
+  maincolor: Vert

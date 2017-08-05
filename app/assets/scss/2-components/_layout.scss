@@ -1,0 +1,27 @@
+section {
+	position: relative;
+	padding: $section_padding 0;
+	@include background-cover();
+}
+.container {
+	position: relative;
+	max-width: $container_mw;
+	padding: 0 $container_padding;
+  margin: 0 auto;
+}
+// Float n stuff
+.clear,
+.clearfix,
+%clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.left { float: left }
+.right { float: right; }

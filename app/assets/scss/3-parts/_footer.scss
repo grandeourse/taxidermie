@@ -1,0 +1,47 @@
+footer {
+	background-color: $black;
+	.footer-content {
+		@include padding($padding*2, $padding, $padding*2, $padding);
+		font: em(18em)/1.5 $main_font;
+		p {
+			@include margin-bottom(0);
+		}
+		a {
+			font: 500 em(18em)/1.5 $main_font;
+			display: block;
+			@include margin-bottom($padding/3);
+			color: $white;
+			word-break: break-all;
+			border-bottom: none;
+			&:hover {
+				color: $main_color;
+				border-bottom: none;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+			.fa {
+				margin-right: 5px;
+			}
+		}
+		address {
+			.fa {
+				display: none;
+			}
+		}
+	}
+	.footer-map {
+		position: relative;
+		.map {
+			height: 420px;
+		}
+	}
+}
+
+@include max-width(1024px) {
+	
+	footer {
+		text-align: center;
+	}
+	
+}

@@ -1,0 +1,53 @@
+$colors:
+	white $white $black $main_color,
+	black $black $white $main_color,
+	gray $gray $black $main_color,
+	maincolor $main_color $white $gray
+;
+
+@each $color in $colors {
+	
+	$colorclass: nth($color, 1);
+  $colorvalue: nth($color, 2);
+  $colortext: nth($color, 3);
+  $colorlink: nth($color, 4);
+	.bg-#{$colorclass} {
+	  background-color: $colorvalue;
+	  color: $colortext;
+	  &:after {
+		  background-color: rgba($colorvalue, 0.8);
+	  }
+	  a {
+		  color: $colorlink;
+		  border-color: $colorlink;
+		  &:hover {
+			  color: mix( black, $colorlink, 15%);
+		  }
+	  }
+	  .button {
+		  color: $colorlink;
+		  border-color: $colorlink;
+		  &:hover {
+			  border-color: mix(black, $colorlink, 15%);
+		  }
+	  }
+	  .more {
+		  color: $colorlink;
+		  &:before {
+			  background-color: $colorlink;
+		  }
+		  &:hover {
+			  &:before {
+			  	background-color: mix(black, $colorlink, 15%);
+			  }
+		  }
+	  }
+	}
+	.border-#{$colorclass} {
+	  border: 1px solid $colorvalue;
+	}
+	.t#{$colorclass} {
+	  color: $colorvalue;
+	}
+	
+}

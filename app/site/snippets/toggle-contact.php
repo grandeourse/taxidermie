@@ -1,0 +1,1 @@
+<a class="contact-toggle button" data-sujet="<?php echo $page->title() ?>"><?php echo $page->liencontact() ?></a>

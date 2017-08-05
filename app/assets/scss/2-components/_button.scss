@@ -1,0 +1,20 @@
+.button {
+	position: relative;
+  display: inline-block;
+  padding: em($padding/3) em($padding);
+  margin: 2px;
+  color: $main_color;
+  font: 500 em(18px)/1 $main_font;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid $main_color;
+}
+.bg-maincolor {
+	.button {
+		color: $white;
+		border-color: $white;
+	}
+}

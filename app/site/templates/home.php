@@ -1,0 +1,1 @@
+<?php snippet('template', array('banner'=> true)) ?>

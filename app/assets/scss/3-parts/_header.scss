@@ -1,0 +1,141 @@
+header {
+	position: fixed;
+	width: 100%;
+	@include padding($padding, 0, $padding, 0);
+	z-index: 103;
+	@include background-image(linear-gradient(top,  rgba(23,22,20,0.8) 0%,rgba(23,22,20,0) 100%));
+	.menu-screen {
+		position: relative;
+		text-align: right;
+		li {
+			display: inline-block;
+			a {
+				position: relative;
+				display: inline-block;
+				color: $white;
+				font-weight: 500;
+				text-transform: uppercase;
+				vertical-align: middle;
+				@extend %hover_border_bottom;
+				@include max-width(1000px) {
+					font-size: rem(19);
+				}
+			}
+			&:after {
+				content: "";
+				display: inline-block;
+				width: em(30);
+				height: 2px;
+				margin: em(5);
+				background-color: $white;
+				vertical-align: middle;
+			}
+			&:last-child {
+				&:after {
+					display: none;
+				}
+			}
+			ul {
+				position: absolute;
+				display: none;
+				li {
+					a {
+						font: 500 em(18)/$line_height $main_font;
+						text-transform: none;
+					}
+					&:after {
+						width: em(20);
+						margin-right: 0;
+					}
+				}
+			}
+			&.active {
+				a {
+					@extend %hover_border_bottom_active;
+				}
+				ul {
+					display: block;
+				}
+			}
+		}
+	}
+}
+.menu-mobile {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	align-items: center;
+	background-color: $black;
+	z-index: 102;
+	text-align: center;
+	color: white;
+	@include background-cover();
+	opacity: 0;
+	visibility: hidden;
+	overflow: scroll;
+  transform: scale(1.2);
+	@include transition(all 0.6s $niceease);
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba($black, 0.95);
+	}
+	.col {
+  	width: 100%;
+	}
+	.container {
+		position: relative;
+		z-index: 1;
+	}
+	ul {
+  	li {
+    	position: relative;
+    	top: -30px;
+    	opacity: 0;
+    	@include margin-bottom();
+    	@include transition(all 0.6s);
+    	a {
+      	display: block;
+      	font: 500 em(32)/1.5 $main_font;
+      	text-transform: uppercase;
+      	color: white;
+        cursor: pointer;
+        @include transition(all 0.3s $niceease);
+    	}
+  	}
+	}
+	.socials {
+  	.social {
+    	&:hover {
+        svg {
+          * {
+            fill: white;
+          }
+        }
+      }
+  	}
+	}
+	&.active {
+  	opacity: 1;
+  	visibility: visible;
+    transform: scale(1);
+    ul {
+      li {
+        top: 0;
+        opacity: 1;
+        @for $i from 1 through 7 {
+          &:nth-child(#{$i}){
+            @include transition-delay(#{$i / 10}s);
+          }	
+        }
+      }
+    }
+	}
+}

@@ -1,0 +1,19 @@
+type: group
+fields:
+  banniere:
+    label: Bannière
+    type: headline
+  subtitle:
+    label: Sous titre
+    type:  text
+  text:
+    label: Text
+    type:  textarea
+    size:  large
+  lien:
+    label: Lien
+    type: text
+  textlien:
+    label: Texte du lien
+    type: text
+  color: color

@@ -1,0 +1,108 @@
+html {
+	font-size: $font_size;
+	@include max-width(1280px) {
+		font-size: $font_size - 3;
+	}
+	@include max-width(1024px) {
+		font-size: $font_size - 5;
+	}
+}
+body {
+	font: em($font_size)/$line_height $main_font;
+	color: $black;
+}
+p {
+	@include margin-bottom($padding);
+}
+h1 {
+	font: 700 em(72)/$line_height $main_font;
+	@include margin-bottom($padding)
+	text-transform: uppercase;
+	&:before {
+		content: "";
+		display: block;
+		width: 90px;
+		height: 5px;
+		margin-bottom: $container_padding/1.2;
+		background-color: $main_color;
+	}
+}
+h2 {
+	font: 700 em(48)/$line_height $main_font;
+	margin-bottom: $container_padding;
+	text-transform: uppercase;
+}
+h3 {
+	font: 700 em(42)/$line_height $main_font;
+	margin-bottom: $container_padding/1.5;
+}
+h4 {
+	font: 500 em(35)/$line_height $main_font;
+	margin-bottom: $container_padding/2;
+}
+h5 {
+	font: 500 $font_size/$line_height $main_font;
+	margin-bottom: $container_padding/3;
+	text-transform: uppercase;
+}
+h6 {
+	font: 500 $font_size/$line_height $main_font;
+	margin-bottom: $container_padding;
+}
+p+h1, p+h2, p+h3, p+h4, p+h5, p+h6, 
+ul+h1, ul+h2, ul+h3, ul+h4, ul+h5, ul+h6, 
+ol+h1, ol+h2, ol+h3, ol+h4, ol+h5, ol+h6,
+table+h1, table+h2, table+h3, table+h4, table+h5, table+h6, {
+  margin-top: $container_padding;
+}
+.content-text {
+  & > *:first-child {
+    margin-top: 0;
+  }
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+  ol, ul {
+    list-style: disc;
+    margin: 0 $container_padding/4 $container_padding/2 $container_padding/2;
+    li { 
+      margin: 0 0 $container_padding/6;
+    }
+  }
+  ol { list-style: decimal; }
+  
+	b, strong { font-weight: 700; }
+	i, em { font-style: italic; }
+	i.fa {
+		font-style: inherit;
+	}
+	
+	sub,
+	sup {
+	  font-size: 75%;
+	  line-height: 0;
+	  position: relative;
+	  vertical-align: baseline;
+	}
+	sup { top: -0.4em; }
+	sub { bottom: -0.25em; }
+	
+	a {
+		color: $main_color;
+		border-bottom: 1px solid $main_color;
+		&:hover {
+			color: $main_color_hover;
+			border-bottom: 1px solid $main_color_hover;
+		}
+	}
+}
+
+.tleft {
+	text-align: left;
+}
+.tcenter {
+	text-align: center;
+}
+.tright {
+	text-align: right;
+}
