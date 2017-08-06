@@ -1,8 +1,5 @@
-.banner {
-	padding: 0;
-	position: relative;
-	@include background-cover();
-	.banner-content {
+.video {
+	.video-content {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -12,9 +9,10 @@
 		align-items: center;
 		text-align: center;
 		z-index: 1;
-		.logo-font {
+		iframe {
+			width: 65vw;
+			height: 37vw;
 			margin: auto;
-			font-size: 16vw;
 		}
 	}
 }

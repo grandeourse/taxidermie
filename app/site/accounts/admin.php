@@ -7,5 +7,8 @@ password: >
 language: fr
 role: admin
 history:
+  - home/le-brasier
+  - home/band
+  - home/taxidermie
   - home/banniere
   - home
