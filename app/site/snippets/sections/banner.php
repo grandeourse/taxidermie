@@ -1,37 +1,23 @@
-<section id="banner" class="banner bg-<?php echo $page->color() ?>" style="background-image: url(<?php echo $page->images()->first()->url() ?>);">
+<section id="banner" class="banner" <?php if($page->hasImages()): ?>style="background-image: url(<?php echo $page->images()->first()->url() ?>);"<?php endif ?>>
   
-  <div class="container">
+  <div id="video-viewport">
 	  
-	  <div class="banner-content content-text">
-		  
-		  <h1>
-			  
-			  <?php if($page->subtitle() != ""): ?>
-			  
-			  	<?php echo $page->subtitle() ?>
-			  
-			  <?php else: ?>
-			  
-			  	<?php echo $page->title() ?>
-			  
-			  <?php endif ?>
+		<video width="1920" height="1280" autoplay muted loop>
 			
-			</h1>
+			<source src="<?php echo $page->videos()->first()->url() ?>" type="video/mp4" />
 			
-			<?php if($page->text() != ""): ?>
-			  
-		  	<?php echo $page->text()->kirbytext() ?>
-		  
-		  <?php endif ?>
-		  
-		  <?php if($page->lien() != ""): ?>
-			  
-		  	<a href="<?php echo $page->lien() ?>" class="more"><?php echo $page->textlien() ?></a>
-		  
-		  <?php endif ?>
-		  
-	  </div>
-	  
-  </div>
+		</video>
+		
+	</div>
+	
+	<div class="banner-content">
+		
+		<div class="logo-font">
+			
+			<span class="icon-grandeourse-logo"></span>
+			
+		</div>
+		
+	</div>
   
 </section>

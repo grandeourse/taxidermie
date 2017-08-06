@@ -1,6 +1,6 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Bannière
+title: Band
 pages: false
 files: true
 fields:

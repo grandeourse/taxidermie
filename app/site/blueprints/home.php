@@ -3,13 +3,11 @@
 title: Home
 pages: 
   template:
-    - featured_services
-    - featured_produits
-    - cta
-    - section
+    - banner
+    - video
+    - band
+    - next
 fields:
   title:
     label: Title
     type:  text
-  banner:
-    extends: banner

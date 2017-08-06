@@ -1,6 +1,6 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Bannière
+title: Band
 pages: false
 files: true
 fields:
@@ -13,3 +13,6 @@ fields:
   text:
     label: Texte
     type: textarea
+  video:
+    label: Vidéo (Lien Youtube)
+    type: text

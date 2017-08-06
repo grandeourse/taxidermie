@@ -1,6 +1,6 @@
 section {
 	position: relative;
-	padding: $section_padding 0;
+	height: 56.25vw;
 	@include background-cover();
 }
 .container {

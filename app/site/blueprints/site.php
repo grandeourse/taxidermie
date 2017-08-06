@@ -27,3 +27,6 @@ fields:
   logo:
     label: Logo
     type:  image
+  icon:
+    label: Icon
+    type:  image

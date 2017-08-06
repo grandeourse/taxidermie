@@ -7,9 +7,5 @@ password: >
 language: fr
 role: admin
 history:
-  - >
-    services/fosse-septique/acreditation-ecoflo
-  - services/fosse-septique/credit-renovert
-  - services/fosse-septique
-  - services/travaux-d-excavation
-  - services
+  - home/banniere
+  - home

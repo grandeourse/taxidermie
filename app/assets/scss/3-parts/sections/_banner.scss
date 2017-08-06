@@ -1,25 +1,19 @@
 .banner {
+	padding: 0;
 	position: relative;
 	@include background-cover();
-	&:after {
-		content: "";
-		display: block;
+	.banner-content {
 		position: absolute;
 		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
-	}
-	.container {
-		position: relative;
-		z-index: 1;
-	}
-	.banner-content {
-		width: 66.66%;
-		@include max-width(1280px) {
-			width: 80%;
-		}@include max-width(1024px) {
-			width: 80%;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		.logo-font {
+			margin: auto;
+			font-size: 16vw;
 		}
 	}
 }
