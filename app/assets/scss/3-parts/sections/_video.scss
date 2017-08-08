@@ -9,10 +9,17 @@
 		align-items: center;
 		text-align: center;
 		z-index: 1;
-		iframe {
+		iframe, img {
 			width: 65vw;
 			height: 37vw;
 			margin: auto;
+			@include max-width(800px) {
+				width: 90vw;
+				height: 45vw;
+			}
+		}
+		img {
+			height: auto;
 		}
 	}
 }

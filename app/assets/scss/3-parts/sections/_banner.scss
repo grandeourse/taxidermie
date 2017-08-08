@@ -15,6 +15,9 @@
 		.logo-font {
 			margin: auto;
 			font-size: 16vw;
+			@include max-width(800px) {
+				font-size: 26vw;
+			}
 		}
 	}
 }

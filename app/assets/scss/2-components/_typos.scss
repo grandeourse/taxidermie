@@ -1,5 +1,6 @@
 html {
 	font-size: $font_size;
+	letter-spacing: 0.5px;
 	@include max-width(1280px) {
 		font-size: $font_size - 3;
 	}

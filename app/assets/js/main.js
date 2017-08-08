@@ -14,7 +14,7 @@ $(document).ready(function() {
 	
 	
 	// Videos
-	
+	/*
 	var min_w = 300;
 	var vid_w_orig;
 	var vid_h_orig;
@@ -30,20 +30,40 @@ $(document).ready(function() {
 	});
 	
 	function fitVideo() {
-	
-    $('.video-viewport').width($('.banner').width());
+		
+		/*if($(window).width() > 800) {
+			
+			$('.video-viewport').width($('.banner').width());
 
-    var scale_h = $('.banner').width() / vid_w_orig;
-    var scale_v = $('.banner').height() / vid_h_orig;
-    var scale = scale_h;
-
-    $('video').width(scale * vid_w_orig);
-
-    $('.video-viewport').scrollLeft(($('video').width() - $('.banner').width()) / 2);
+	    var scale_h = $('.banner').width() / vid_w_orig;
+	    var scale_v = $('.banner').height() / vid_h_orig;
+	    var scale = scale_h;
 	
-	};
+	    $('video').width(scale * vid_w_orig);
 	
-	banner();
+	    $('.video-viewport').scrollLeft(($('video').width() - $('.banner').width()) / 2);
+			
+		/*}
+		else {
+			
+			$('.video-viewport').width($('.banner').width());
+	    $('.video-viewport').height($('.banner').height());
+	
+	    var scale_h = $('.banner').width() / vid_w_orig;
+	    var scale_v = $('.banner').height() / vid_h_orig;
+	    var scale = scale_h > scale_v ? scale_h : scale_v;
+	
+	    if (scale * vid_w_orig < min_w) {scale = min_w / vid_w_orig;};
+	
+	    $('video').width(scale * vid_w_orig);
+	    $('video').height(scale * vid_h_orig);
+	
+	    $('.video-viewport').scrollLeft(($('video').width() - $('.banner').width()) / 2);
+	    $('.video-viewport').scrollTop(($('video').height() - $('.banner').height()) / 2);
+	    
+		}
+	
+	};*/
 	
 });
 
@@ -52,7 +72,7 @@ $(document).ready(function() {
 
 $(window).resize(function() {
 	
-	banner();
+	
 	
 });
 

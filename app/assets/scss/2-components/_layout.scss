@@ -2,6 +2,10 @@ section {
 	position: relative;
 	height: 56.25vw;
 	@include background-cover();
+	@include max-width(800px) {
+		width: 100vw;
+		height: 50vh;
+	}
 }
 .container {
 	position: relative;

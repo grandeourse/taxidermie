@@ -1,0 +1,12 @@
+.godown {
+  position: absolute;
+  top: padding_vw(-$padding);
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 2;
+  @include max-width(800px) {
+    display: none;
+  }
+}
