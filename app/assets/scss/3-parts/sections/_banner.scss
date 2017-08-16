@@ -1,6 +1,7 @@
 .banner {
-	padding: 0;
 	position: relative;
+	max-height: 100vh;
+	padding: 0;
 	@include background-cover();
 	.banner-content {
 		position: absolute;
