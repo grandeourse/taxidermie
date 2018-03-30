@@ -7,10 +7,10 @@ password: >
 language: fr
 role: admin
 history:
-  - home
-  - home/taxidermie
-  - home/le-brasier
   - home/band
+  - home/video
+  - home/musique
   - home/banniere
+  - home
 firstname: ""
 lastname: ""

@@ -15,6 +15,8 @@
 	
 	<link rel="icon" type="image/png" href="<?php echo $site->url() ?>/assets/images/favicon.png" >
 	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+	
 	<?php echo css('assets/css/main.css') ?>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

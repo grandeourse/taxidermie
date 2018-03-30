@@ -4,9 +4,9 @@ title: Home
 pages: 
   template:
     - banner
+    - musique
     - video
     - band
-    - next
 fields:
   title:
     label: Title

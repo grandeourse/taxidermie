@@ -1,10 +1,12 @@
 .banner {
 	position: relative;
-	max-height: 100vh;
+	top: 0;
+	height: calc(56.25vw + 250px);
 	padding: 0;
 	@include background-cover();
+	background-attachment: fixed;
 	.banner-content {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		right: 0;
@@ -15,7 +17,8 @@
 		z-index: 1;
 		.logo-font {
 			margin: auto;
-			font-size: 16vw;
+			font-size: 14vw;
+			color: #404040;
 			@include max-width(800px) {
 				font-size: 26vw;
 			}

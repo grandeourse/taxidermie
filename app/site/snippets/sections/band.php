@@ -1,17 +1,11 @@
-<section id="<?php echo $page->uid() ?>" class="<?php echo $page->template() ?>" <?php if($page->hasImages()): ?>style="background-image: url(<?php echo $page->images()->first()->url() ?>);"<?php endif ?>>
+<section id="<?php echo $page->uid() ?>" class="<?php echo $page->template() ?>">
   
-  <?php if($page->hasVideos()): ?>
+  <?php if($page->hasImages()): ?><div class="band-image"><img src="<?php echo $page->images()->first()->url() ?>"></div><?php endif ?>
   
-	  <div class="video-viewport">
-		  
-			<video width="1920" height="1280" autoplay muted loop>
-				
-				<source src="<?php echo $page->videos()->first()->url() ?>" type="video/mp4" />
-				
-			</video>
-			
-		</div>
-	
-	<?php endif ?>
+  <div class="band-content">
+	  
+	  <?php echo $page->text()->kirbytext() ?>
+	  
+  </div>
   
 </section>

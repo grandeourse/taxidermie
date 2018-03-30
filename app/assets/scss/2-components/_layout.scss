@@ -1,11 +1,9 @@
 section {
 	position: relative;
-	height: 56.25vw;
+	top: -280px;
+	background-color: $bg_color;
+	z-index: 1;
 	@include background-cover();
-	@include max-width(800px) {
-		width: 100vw;
-		height: 50vh;
-	}
 }
 .container {
 	position: relative;

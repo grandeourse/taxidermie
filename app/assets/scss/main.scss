@@ -12,6 +12,7 @@
 @import "1-base/mixins/transitions";
 @import "1-base/mixins/typos";
 @import "1-base/mixins/layout";
+@import "1-base/mixins/margin-padding";
 @import "1-base/base";
 @import "2-components/button";
 @import "2-components/colors";
@@ -26,6 +27,8 @@
 @import "3-parts/header";
 @import "3-parts/sections/banner";
 @import "3-parts/sections/video";
+@import "3-parts/sections/musique";
+@import "3-parts/sections/band";
 @import "3-parts/contact-popup";
 @import "3-parts/sections/section";
 @import "4-templates/home";

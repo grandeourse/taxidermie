@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?ghbf9l');
-  src:  url('../fonts/icomoon.eot?ghbf9l#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?ghbf9l') format('truetype'),
-    url('../fonts/icomoon.woff?ghbf9l') format('woff'),
-    url('../fonts/icomoon.svg?ghbf9l#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?reak7i');
+  src:  url('../fonts/icomoon.eot?reak7i#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?reak7i') format('truetype'),
+    url('../fonts/icomoon.woff?reak7i') format('woff'),
+    url('../fonts/icomoon.svg?reak7i#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-grande-ourse-logo:before {
+  content: "\e900";
+}
 .icon-bandcamp:before {
   content: "\e902";
   color: #fff;
@@ -52,14 +55,7 @@
   content: "\e908";
   color: #fff;
 }
-.icon-grandeourse-logo:before {
-  content: "\e900";
-  color: #fff;
-}
-.icon-grandeourse-icon:before {
-  content: "\e901";
-  color: #fff;
-}
+
 
 @font-face {
     font-family: 'alte_haas_groteskbold';

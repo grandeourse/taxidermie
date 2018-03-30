@@ -1,4 +1,7 @@
 .video {
+	position: relative;
+	height: 56.25vw;
+	z-index: 2;
 	.video-content {
 		position: absolute;
 		top: 0;
